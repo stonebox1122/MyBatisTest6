@@ -5,14 +5,21 @@
 		<!-- jdbc连接 -->
 		<jdbcConnection connectionURL="jdbc:oracle:thin:@172.30.60.20:1521/rac" driverClass="oracle.jdbc.driver.OracleDriver" password="hr" userId="hr" />
 		<!-- 生成实体类地址 -->
-		<javaModelGenerator targetPackage="com.stone.orm" targetProject="MyBatisTest" />
+		<javaModelGenerator targetPackage="com.stone.entity" targetProject="MyBatisTest4" />
 		<!-- 生成mapxml文件 -->
-		<sqlMapGenerator targetPackage="com.stone.orm" targetProject="MyBatisTest" />
+		<sqlMapGenerator targetPackage="com.stone.xml" targetProject="MyBatisTest4" />
 		<!-- 生成mapxml对应client，也就是接口dao -->
-		<javaClientGenerator targetPackage="com.stone.orm" targetProject="MyBatisTest" type="XMLMAPPER" />
+		<javaClientGenerator targetPackage="com.stone.dao" targetProject="MyBatisTest4" type="XMLMAPPER" />
 		<!-- 配置表信息 -->	
-		<table schema="hr" tableName="emp">
+		<table schema="hr" tableName="emp" enableCountByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false">
 			<generatedKey column="empno" sqlStatement="select emp_seq.nextval from dual" identity="false"/>
+			<columnOverride column="empno" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="mgr" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="deptno" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="sal" javaType="java.lang.Double"></columnOverride>
+			<columnOverride column="comm" javaType="java.lang.Double"></columnOverride>
 		</table>
 	</context>
 </generatorConfiguration>

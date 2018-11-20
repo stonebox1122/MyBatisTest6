@@ -128,7 +128,8 @@
 			2，catalog：数据库的catalog； 
 			3，alias：为数据表设置的别名，如果设置了alias，那么生成的所有的SELECT SQL语句中，列名会变成：alias_actualColumnName 
 			4，domainObjectName：生成的domain类的名字，如果不设置，直接使用表名作为domain类的名字；可以设置为somepck.domainName，那么会自动把domainName类再放到somepck包里面； 
-			5，enableInsert（默认true）：指定是否生成insert语句； 6，enableSelectByPrimaryKey（默认true）：指定是否生成按照主键查询对象的语句（就是getById或get）； 
+			5，enableInsert（默认true）：指定是否生成insert语句； 
+			6，enableSelectByPrimaryKey（默认true）：指定是否生成按照主键查询对象的语句（就是getById或get）； 
 			7，enableSelectByExample（默认true）：MyBatis3Simple为false，指定是否生成动态查询语句； 
 			8，enableUpdateByPrimaryKey（默认true）：指定是否生成按照主键修改对象的语句（即update)； 
 			9，enableDeleteByPrimaryKey（默认true）：指定是否生成按照主键删除对象的语句（即delete）； 
