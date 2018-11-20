@@ -18,5 +18,6 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	</environments>
 	<mappers>
 		<mapper resource="com/stone/orm/EmpMapper.xml" />
+		<mapper resource="com/stone/orm/EmpMapper2.xml" />
 	</mappers>
 </configuration>

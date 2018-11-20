@@ -24,7 +24,7 @@ public class EmpMapperImpl implements EmpMapper {
 			//1、use MyBatiUtil get SqlSession instance
 			session = MyBatisUtil.getSqlSession();
 			//2、操作
-			session.insert("com.stone.orm.EmpMapper.insert", record);
+			session.insert("com.stone.orm.EmpMapper2.insert", record);
 			//3、SqlSession提交
 			session.commit();
 			return 1;
