@@ -90,20 +90,53 @@ public class EmpMapperImpl implements EmpMapper {
 
 	@Override
 	public Emp selectByEmpno(int empno) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Emp emp = null;
+		try {
+			//1、use MyBatiUtil get SqlSession instance
+			session = MyBatisUtil.getSqlSession();
+			//2、操作
+			emp = session.selectOne("com.stone.xml.EmpMapper.selectByEmpno", empno);
+		} finally {
+			//4、SqlSession关闭
+			if (session != null) {
+				session.close();
+			}
+		}
+		return emp;
 	}
 
 	@Override
 	public List<Emp> selectByEname(String ename) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		List<Emp> emps = null;
+		try {
+			//1、use MyBatiUtil get SqlSession instance
+			session = MyBatisUtil.getSqlSession();
+			//2、操作
+			emps = session.selectList("com.stone.xml.EmpMapper.selectByEname",ename);
+		} finally {
+			//3、SqlSession关闭
+			if (session != null) {
+				session.close();
+			}
+		}
+		return emps;
 	}
 
 	@Override
 	public Emp selectByMap(Map<String, Object> map) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Emp emp = null;
+		try {
+			//1、use MyBatiUtil get SqlSession instance
+			session = MyBatisUtil.getSqlSession();
+			//2、操作
+			emp = session.selectOne("com.stone.xml.EmpMapper.seelctByMap", map);
+		} finally {
+			//3、SqlSession关闭
+			if (session != null) {
+				session.close();
+			}
+		}
+		return emp;
 	}
 
 	@Override

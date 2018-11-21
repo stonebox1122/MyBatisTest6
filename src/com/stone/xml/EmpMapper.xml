@@ -110,4 +110,13 @@
   <select id="selectAllEmp" resultType="com.stone.entity.Emp">
   	select * from HR.EMP
   </select>
+  <select id="selectByEmpno" resultType="com.stone.entity.Emp">
+  	select * from HR.EMP where empno=#{empno}
+  </select>
+  <select id="selectByEname" resultType="com.stone.entity.Emp">
+  	select * from HR.EMP where ename like '%'||#{ename}||'%'
+  </select>
+  <select id="seelctByMap" resultType="com.stone.entity.Emp">
+  	select * from HR.EMP where empno=#{empno}
+  </select>
 </mapper>

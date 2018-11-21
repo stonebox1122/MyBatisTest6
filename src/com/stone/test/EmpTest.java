@@ -1,5 +1,6 @@
 package com.stone.test;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -61,6 +62,32 @@ public class EmpTest {
 		EmpMapper empMapper = new EmpMapperImpl();
 		Map<String,Emp> map = empMapper.selectEmpMap();
 		Emp emp = map.get("ccc");
+		System.out.println(emp);
+	}
+	
+	@Test
+	public void test06() throws Exception {
+		EmpMapper empMapper = new EmpMapperImpl();
+		Emp emp = empMapper.selectByEmpno(8899);
+		System.out.println(emp);
+	}
+	
+	@Test
+	public void test07() throws Exception {
+		EmpMapper empMapper = new EmpMapperImpl();
+		List<Emp> emps = empMapper.selectByEname("A");
+		for (Emp emp : emps) {
+			System.out.println(emp);
+		}
+	}
+	
+	@Test
+	public void test08() throws Exception {
+		EmpMapper empMapper = new EmpMapperImpl();
+		Emp emp = new Emp();
+		Map<String,Object> map = new HashMap<String, Object>();
+		map.put("empno", 31);
+		emp = empMapper.selectByMap(map);
 		System.out.println(emp);
 	}
 }

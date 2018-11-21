@@ -1,0 +1,199 @@
+2018-11-20 08:42:20  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 08:42:20  [ main:391 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 08:42:20  [ main:391 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 08:42:20  [ main:391 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 08:42:20  [ main:391 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 08:42:20  [ main:563 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 08:42:21  [ main:1218 ] - [ DEBUG ]  Created connection 922511709.
+2018-11-20 08:42:21  [ main:1218 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@36fc695d]
+2018-11-20 08:42:21  [ main:1218 ] - [ DEBUG ]  ==>  Preparing: select emp_seq.nextval from dual 
+2018-11-20 08:42:21  [ main:1391 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  <==      Total: 1
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  ==> Parameters: 24(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 08:42:20.085(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@36fc695d]
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@36fc695d]
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@36fc695d]
+2018-11-20 08:42:21  [ main:1515 ] - [ DEBUG ]  Returned connection 922511709 to pool.
+2018-11-20 14:21:11  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 14:21:11  [ main:284 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:21:11  [ main:284 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:21:11  [ main:284 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:21:11  [ main:284 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:45:53  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 14:45:53  [ main:197 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:45:53  [ main:198 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:45:53  [ main:198 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:45:53  [ main:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:48:51  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 14:48:51  [ main:345 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:48:51  [ main:345 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:48:51  [ main:345 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:48:51  [ main:345 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:54:08  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 14:54:08  [ main:220 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:54:08  [ main:220 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:54:08  [ main:220 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:54:08  [ main:220 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 14:54:08  [ main:311 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 14:54:09  [ main:987 ] - [ DEBUG ]  Created connection 711327356.
+2018-11-20 14:54:09  [ main:987 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 14:54:09  [ main:987 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 14:54:09  [ main:1175 ] - [ DEBUG ]  ==> Parameters: 8899(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 14:54:08.389(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 14:54:09  [ main:1206 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 14:54:09  [ main:1222 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 14:54:09  [ main:1222 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 14:54:09  [ main:1222 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 14:54:09  [ main:1222 ] - [ DEBUG ]  Returned connection 711327356 to pool.
+2018-11-20 15:00:05  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 15:00:05  [ main:364 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:00:05  [ main:364 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:00:05  [ main:364 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:00:05  [ main:364 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:00:05  [ main:489 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 15:00:06  [ main:1338 ] - [ DEBUG ]  Created connection 711327356.
+2018-11-20 15:00:06  [ main:1338 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 15:00:06  [ main:1354 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 15:00:06  [ main:1590 ] - [ DEBUG ]  ==> Parameters: 8900(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 15:00:05.099(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 15:00:06  [ main:1624 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 15:00:06  [ main:1624 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 15:00:06  [ main:1624 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 15:00:06  [ main:1624 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 15:00:06  [ main:1624 ] - [ DEBUG ]  Returned connection 711327356 to pool.
+2018-11-20 15:12:03  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 15:12:04  [ main:250 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:12:04  [ main:250 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:12:04  [ main:250 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:12:04  [ main:250 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:12:04  [ main:348 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 15:12:05  [ main:1131 ] - [ DEBUG ]  Created connection 341796579.
+2018-11-20 15:12:05  [ main:1147 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:12:05  [ main:1162 ] - [ DEBUG ]  ==>  Preparing: select emp_seq.nextval from dual 
+2018-11-20 15:12:05  [ main:1319 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 15:12:05  [ main:1457 ] - [ DEBUG ]  <==      Total: 1
+2018-11-20 15:12:05  [ main:1457 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 15:12:05  [ main:1457 ] - [ DEBUG ]  ==> Parameters: 25(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 15:12:03.832(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 15:12:05  [ main:1457 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 15:12:05  [ main:1457 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:12:05  [ main:1473 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:12:05  [ main:1473 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:12:05  [ main:1473 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 15:41:49  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 15:41:49  [ main:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:41:49  [ main:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:41:49  [ main:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:41:49  [ main:199 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 15:41:49  [ main:293 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 15:41:50  [ main:943 ] - [ DEBUG ]  Created connection 341796579.
+2018-11-20 15:41:50  [ main:943 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:943 ] - [ DEBUG ]  ==>  Preparing: select emp_seq.nextval from dual 
+2018-11-20 15:41:50  [ main:1115 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 15:41:50  [ main:1227 ] - [ DEBUG ]  <==      Total: 1
+2018-11-20 15:41:50  [ main:1227 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 15:41:50  [ main:1227 ] - [ DEBUG ]  ==> Parameters: 26(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 15:41:49.314(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Checked out connection 341796579 from pool.
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  ==>  Preparing: delete from HR.EMP where empno=? 
+2018-11-20 15:41:50  [ main:1242 ] - [ DEBUG ]  ==> Parameters: 8900(Integer)
+2018-11-20 15:41:50  [ main:1258 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 15:41:50  [ main:1258 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1258 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1258 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 15:41:50  [ main:1258 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 16:20:59  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 16:20:59  [ main:191 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:20:59  [ main:191 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:20:59  [ main:191 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:20:59  [ main:191 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:20:59  [ main:269 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:21:00  [ main:906 ] - [ DEBUG ]  Created connection 711327356.
+2018-11-20 16:21:00  [ main:906 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 16:21:00  [ main:906 ] - [ DEBUG ]  ==>  Preparing: update HR.EMP set ENAME=?, JOB=?, MGR=?, HIREDATE=?, SAL=?, COMM=?, DEPTNO=? where EMPNO=? 
+2018-11-20 16:21:00  [ main:1106 ] - [ DEBUG ]  ==> Parameters: ccc(String), ddd(String), 7902(Integer), 2018-11-20(Date), 8888.0(Double), 100.0(Double), 80(Integer), 8899(Integer)
+2018-11-20 16:21:00  [ main:1122 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 16:21:00  [ main:1122 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 16:21:00  [ main:1123 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 16:21:00  [ main:1123 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@2a65fe7c]
+2018-11-20 16:21:00  [ main:1123 ] - [ DEBUG ]  Returned connection 711327356 to pool.
+2018-11-20 16:49:01  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 16:49:01  [ main:226 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:49:01  [ main:226 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:49:01  [ main:227 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:49:01  [ main:228 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:49:01  [ main:316 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:49:02  [ main:1111 ] - [ DEBUG ]  Created connection 1168019749.
+2018-11-20 16:49:02  [ main:1112 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 16:49:02  [ main:1115 ] - [ DEBUG ]  ==>  Preparing: select * from HR.EMP 
+2018-11-20 16:49:02  [ main:1304 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 16:49:02  [ main:1481 ] - [ DEBUG ]  <==      Total: 22
+2018-11-20 16:49:02  [ main:1482 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 16:49:02  [ main:1483 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 16:49:02  [ main:1483 ] - [ DEBUG ]  Returned connection 1168019749 to pool.
+2018-11-20 16:50:02  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 16:50:02  [ main:237 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:50:02  [ main:237 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:50:02  [ main:238 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:50:02  [ main:238 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 16:50:02  [ main:321 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:50:03  [ main:1079 ] - [ DEBUG ]  Created connection 341796579.
+2018-11-20 16:50:03  [ main:1080 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1082 ] - [ DEBUG ]  ==>  Preparing: select emp_seq.nextval from dual 
+2018-11-20 16:50:03  [ main:1269 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 16:50:03  [ main:1394 ] - [ DEBUG ]  <==      Total: 1
+2018-11-20 16:50:03  [ main:1400 ] - [ DEBUG ]  ==>  Preparing: insert into HR.EMP (EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO) values (?, ?, ?, ?, ?, ?, ?, ?) 
+2018-11-20 16:50:03  [ main:1401 ] - [ DEBUG ]  ==> Parameters: 27(Integer), aaa(String), bbb(String), 7902(Integer), 2018-11-20 16:50:02.143(Timestamp), 9999.0(Double), 100.0(Double), 80(Integer)
+2018-11-20 16:50:03  [ main:1404 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 16:50:03  [ main:1405 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1406 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1408 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1409 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 16:50:03  [ main:1416 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:50:03  [ main:1417 ] - [ DEBUG ]  Checked out connection 341796579 from pool.
+2018-11-20 16:50:03  [ main:1417 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1418 ] - [ DEBUG ]  ==>  Preparing: delete from HR.EMP where empno=? 
+2018-11-20 16:50:03  [ main:1418 ] - [ DEBUG ]  ==> Parameters: 8900(Integer)
+2018-11-20 16:50:03  [ main:1420 ] - [ DEBUG ]  <==    Updates: 0
+2018-11-20 16:50:03  [ main:1420 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1422 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1422 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1423 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 16:50:03  [ main:1424 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:50:03  [ main:1424 ] - [ DEBUG ]  Checked out connection 341796579 from pool.
+2018-11-20 16:50:03  [ main:1425 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1425 ] - [ DEBUG ]  ==>  Preparing: update HR.EMP set ENAME=?, JOB=?, MGR=?, HIREDATE=?, SAL=?, COMM=?, DEPTNO=? where EMPNO=? 
+2018-11-20 16:50:03  [ main:1428 ] - [ DEBUG ]  ==> Parameters: ccc(String), ddd(String), 7902(Integer), 2018-11-20(Date), 8888.0(Double), 100.0(Double), 80(Integer), 8899(Integer)
+2018-11-20 16:50:03  [ main:1429 ] - [ DEBUG ]  <==    Updates: 1
+2018-11-20 16:50:03  [ main:1429 ] - [ DEBUG ]  Committing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1430 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1431 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1431 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 16:50:03  [ main:1433 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 16:50:03  [ main:1433 ] - [ DEBUG ]  Checked out connection 341796579 from pool.
+2018-11-20 16:50:03  [ main:1433 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1434 ] - [ DEBUG ]  ==>  Preparing: select * from HR.EMP 
+2018-11-20 16:50:03  [ main:1434 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 16:50:03  [ main:1461 ] - [ DEBUG ]  <==      Total: 23
+2018-11-20 16:50:03  [ main:1461 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1462 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@145f66e3]
+2018-11-20 16:50:03  [ main:1462 ] - [ DEBUG ]  Returned connection 341796579 to pool.
+2018-11-20 17:15:24  [ main:0 ] - [ DEBUG ]  Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-11-20 17:15:24  [ main:252 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 17:15:24  [ main:253 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 17:15:24  [ main:253 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 17:15:24  [ main:254 ] - [ DEBUG ]  PooledDataSource forcefully closed/removed all connections.
+2018-11-20 17:15:24  [ main:362 ] - [ DEBUG ]  Opening JDBC Connection
+2018-11-20 17:15:25  [ main:985 ] - [ DEBUG ]  Created connection 1168019749.
+2018-11-20 17:15:25  [ main:985 ] - [ DEBUG ]  Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 17:15:25  [ main:988 ] - [ DEBUG ]  ==>  Preparing: select * from HR.EMP 
+2018-11-20 17:15:25  [ main:1170 ] - [ DEBUG ]  ==> Parameters: 
+2018-11-20 17:15:25  [ main:1334 ] - [ DEBUG ]  <==      Total: 23
+2018-11-20 17:15:25  [ main:1336 ] - [ DEBUG ]  Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 17:15:25  [ main:1337 ] - [ DEBUG ]  Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@459e9125]
+2018-11-20 17:15:25  [ main:1337 ] - [ DEBUG ]  Returned connection 1168019749 to pool.
