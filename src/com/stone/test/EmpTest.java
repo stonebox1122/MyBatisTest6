@@ -96,4 +96,87 @@ public class EmpTest {
 		emp = empMapper.selectByMap(map);
 		System.out.println(emp);
 	}
+	
+	@Test
+	public void test09() throws Exception {
+		Map<String,Object> map = new HashMap<String, Object>();
+		map.put("ename", "A");
+		map.put("sal", 2000);
+		List<Emp> emps = empMapper.selectEmpByMap(map);
+		for (Emp emp : emps) {
+			System.out.println(emp);
+		}
+	}
+	
+	@Test
+	public void test10() throws Exception {
+		List<Emp> emps = empMapper.selectEmpByConditions("A", 2000);
+		for (Emp emp : emps) {
+			System.out.println(emp);
+		}
+	}
+	
+	@Test
+	public void test11() throws Exception {
+		//条件是1=1
+		Emp e1 = new Emp();
+		List<Emp> emps1 = empMapper.selectEmpIf(e1);
+		for (Emp emp : emps1) {
+			System.out.println(emp);
+		}
+		//条件是ename like %A%
+		Emp e2 = new Emp();
+		e2.setEname("A");
+		List<Emp> emps2 = empMapper.selectEmpIf(e2);
+		for (Emp emp : emps2) {
+			System.out.println(emp);
+		}
+		//条件是sal>2000
+		Emp e3 = new Emp();
+		e3.setSal(2000.00);
+		List<Emp> emps3 = empMapper.selectEmpIf(e3);
+		for (Emp emp : emps3) {
+			System.out.println(emp);
+		}
+		//条件是ename like %A% and sal>2000
+		Emp e4 = new Emp();
+		e4.setEname("A");
+		e4.setSal(2000.00);
+		List<Emp> emps4 = empMapper.selectEmpIf(e4);
+		for (Emp emp : emps4) {
+			System.out.println(emp);
+		}
+	}
+	
+	@Test
+	public void test12() throws Exception {
+		//条件是1=1
+		Emp e1 = new Emp();
+		List<Emp> emps1 = empMapper.selectEmpWhere(e1);
+		for (Emp emp : emps1) {
+			System.out.println(emp);
+		}
+		//条件是ename like %A%
+		Emp e2 = new Emp();
+		e2.setEname("A");
+		List<Emp> emps2 = empMapper.selectEmpWhere(e2);
+		for (Emp emp : emps2) {
+			System.out.println(emp);
+		}
+		//条件是sal>2000
+		Emp e3 = new Emp();
+		e3.setSal(2000.00);
+		List<Emp> emps3 = empMapper.selectEmpWhere(e3);
+		for (Emp emp : emps3) {
+			System.out.println(emp);
+		}
+		//条件是ename like %A% and sal>2000
+		Emp e4 = new Emp();
+		e4.setEname("A");
+		e4.setSal(2000.00);
+		List<Emp> emps4 = empMapper.selectEmpWhere(e4);
+		for (Emp emp : emps4) {
+			System.out.println(emp);
+		}
+	}
 }

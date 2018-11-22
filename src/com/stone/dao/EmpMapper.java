@@ -101,4 +101,37 @@ public interface EmpMapper {
 	 * @throws Exception 操作中出现了异常，返回给被调用处执行处理
 	 */
 	public int getAllCount(String column,String keyWord) throws Exception;
+	
+	/**
+	 * 
+	 * @param map
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpByMap(Map<String,Object> map) throws Exception;
+	
+	/**
+	 * 
+	 * @param ename
+	 * @param sal
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpByConditions(String ename,double sal) throws Exception;
+	
+	/**
+	 * 
+	 * @param emp
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpIf(Emp emp) throws Exception;
+	
+	/**
+	 * 
+	 * @param emp
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpWhere(Emp emp) throws Exception;
 }
