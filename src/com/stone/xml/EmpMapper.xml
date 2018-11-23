@@ -117,7 +117,7 @@
 	<select id="selectByEname" resultType="com.stone.entity.Emp">
 		select * from HR.EMP where ename like '%'||#{ename}||'%'
 	</select>
-	<select id="seelctByMap" resultType="com.stone.entity.Emp">
+	<select id="selectByMap" resultType="com.stone.entity.Emp">
 		select * from HR.EMP where empno=#{empno}
 	</select>
 	<select id="selectEmpByMap" resultType="com.stone.entity.Emp">
@@ -147,5 +147,65 @@
 				and sal > #{sal}
 			</if>
 		</where>
+	</select>
+	<select id="selectEmpChoose" resultType="com.stone.entity.Emp">
+		select * from HR.EMP
+		<where>
+			<choose>
+				<when test="ename != null and ename != ''">
+					and ename like '%'||#{ename}||'%'
+				</when>
+				<when test="sal > 0">
+					and sal &gt; #{sal}
+				</when>
+				<otherwise>
+					and 1 = 0
+				</otherwise>
+			</choose>
+		</where>
+	</select>
+	<select id="selectEmpForeachArray" resultType="com.stone.entity.Emp">
+		<!-- select * from HR.EMP where empno in (7499,7521) -->
+		select * from HR.EMP
+		<if test="array != null and array.length > 0">
+			where empno in
+			<foreach collection="array" open="(" close=")" item="empno" separator=",">
+				${empno}
+			</foreach>
+		</if>
+	</select>
+	<select id="selectEmpForeachList" resultType="com.stone.entity.Emp">
+		<!-- select * from HR.EMP where empno in (7499,7521) -->
+		select * from HR.EMP
+		<if test="list != null and list.size > 0">
+			where empno in
+			<foreach collection="list" open="(" close=")" item="empno" separator=",">
+				${empno}
+			</foreach>
+		</if>
+	</select>
+	<select id="selectEmpForeachList2" resultType="com.stone.entity.Emp">
+		<!-- select * from HR.EMP where empno in (7499,7521) -->
+		select * from HR.EMP
+		<if test="list != null and list.size > 0">
+			where empno in
+			<foreach collection="list" open="(" close=")" item="emp" separator=",">
+				${emp.empno}
+			</foreach>
+		</if>
+	</select>
+	<!-- 定义SQL片段 -->
+	<sql id="selectHead">
+		select * from HR.EMP
+	</sql>
+	<select id="selectEmpBySQLFragment" resultType="com.stone.entity.Emp">
+		<!-- 使用SQL片段 -->
+		<include refid="selectHead"></include>
+		<if test="list != null and list.size > 0">
+			where empno in
+			<foreach collection="list" open="(" close=")" item="emp" separator=",">
+				${emp.empno}
+			</foreach>
+		</if>
 	</select>
 </mapper>

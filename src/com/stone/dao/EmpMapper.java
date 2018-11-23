@@ -134,4 +134,44 @@ public interface EmpMapper {
 	 * @throws Exception
 	 */
 	public List<Emp> selectEmpWhere(Emp emp) throws Exception;
+	
+	/**
+	 * 
+	 * @param emp
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpChoose(Emp emp) throws Exception;
+	
+	/**
+	 * 
+	 * @param empnos
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpForeachArray(Object[] empnos) throws Exception;
+	
+	/**
+	 * 
+	 * @param empnos
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpForeachList(List<Integer> empnos) throws Exception;
+	
+	/**
+	 * 
+	 * @param emps
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpForeachList2(List<Emp> emps) throws Exception;
+	
+	/**
+	 * 
+	 * @param emps
+	 * @return
+	 * @throws Exception
+	 */
+	public List<Emp> selectEmpBySQLFragment(List<Emp> emps) throws Exception;
 }
