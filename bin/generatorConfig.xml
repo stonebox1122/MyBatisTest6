@@ -5,12 +5,13 @@
 		<!-- jdbc连接 -->
 		<jdbcConnection connectionURL="jdbc:oracle:thin:@172.30.60.20:1521/rac" driverClass="oracle.jdbc.driver.OracleDriver" password="hr" userId="hr" />
 		<!-- 生成实体类地址 -->
-		<javaModelGenerator targetPackage="com.stone.entity" targetProject="MyBatisTest4" />
+		<javaModelGenerator targetPackage="com.stone.entity" targetProject="MyBatisTest5" />
 		<!-- 生成mapxml文件 -->
-		<sqlMapGenerator targetPackage="com.stone.xml" targetProject="MyBatisTest4" />
+		<sqlMapGenerator targetPackage="com.stone.xml" targetProject="MyBatisTest5" />
 		<!-- 生成mapxml对应client，也就是接口dao -->
-		<javaClientGenerator targetPackage="com.stone.dao" targetProject="MyBatisTest4" type="XMLMAPPER" />
+		<javaClientGenerator targetPackage="com.stone.dao" targetProject="MyBatisTest5" type="XMLMAPPER" />
 		<!-- 配置表信息 -->	
+		<!--  
 		<table schema="hr" tableName="emp" enableCountByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			enableUpdateByExample="false">
@@ -20,6 +21,25 @@
 			<columnOverride column="deptno" javaType="java.lang.Integer"></columnOverride>
 			<columnOverride column="sal" javaType="java.lang.Double"></columnOverride>
 			<columnOverride column="comm" javaType="java.lang.Double"></columnOverride>
+		</table>
+		-->
+		<table schema="hr" tableName="employees" enableCountByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false">
+			<generatedKey column="employee_id" sqlStatement="select employees_seq.nextval from dual" identity="false"/>
+			<columnOverride column="employee_id" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="manager_id" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="department_id" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="salary" javaType="java.lang.Double"></columnOverride>
+			<columnOverride column="commission_pct" javaType="java.lang.Double"></columnOverride>
+		</table>
+		<table schema="hr" tableName="departments" enableCountByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			enableUpdateByExample="false">
+			<generatedKey column="department_id" sqlStatement="select departments_seq.nextval from dual" identity="false"/>
+			<columnOverride column="department_id" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="manager_id" javaType="java.lang.Integer"></columnOverride>
+			<columnOverride column="location_id" javaType="java.lang.Integer"></columnOverride>
 		</table>
 	</context>
 </generatorConfiguration>

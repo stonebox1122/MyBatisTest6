@@ -18,5 +18,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	</environments>
 	<mappers>
 		<mapper resource="com/stone/xml/EmpMapper.xml" />
+		<mapper resource="com/stone/xml/DepartmentsMapper.xml"/>
+		<mapper resource="com/stone/xml/EmployeesMapper.xml"/>
 	</mappers>
 </configuration>

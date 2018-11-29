@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.stone.dao.EmpMapper;
+import com.stone.entity.Departments;
 import com.stone.entity.Emp;
 import com.stone.util.MyBatisUtil;
 
